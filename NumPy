@@ -1,0 +1,104 @@
+Here’s a list of key terms and functions associated with NumPy:
+________________________________________
+Core Concepts
+1.	ndarray - The core object in NumPy, representing a multi-dimensional array.
+2.	dtype - Data type of elements in an ndarray (e.g., float32, int64).
+3.	axis - The axis along which operations are performed (for multi-dimensional arrays).
+4.	broadcasting - Mechanism of expanding smaller arrays to match the shape of larger arrays during operations.
+________________________________________
+Array Creation
+1.	array() - Create an ndarray from a list, tuple, or other sequence.
+2.	zeros() - Create an ndarray filled with zeros.
+3.	ones() - Create an ndarray filled with ones.
+4.	empty() - Create an uninitialized ndarray.
+5.	arange() - Create an ndarray with evenly spaced values (like range() but for arrays).
+6.	linspace() - Create an ndarray with evenly spaced values over a specified range.
+7.	reshape() - Change the shape of an ndarray without changing its data.
+8.	resize() - Resize the ndarray (affects original array).
+9.	eye() - Create a 2D identity matrix.
+10.	full() - Create an ndarray filled with a specified value.
+________________________________________
+Array Operations
+1.	add() - Element-wise addition.
+2.	subtract() - Element-wise subtraction.
+3.	multiply() - Element-wise multiplication.
+4.	divide() - Element-wise division.
+5.	mod() - Element-wise modulo operation.
+6.	dot() - Dot product of two arrays.
+7.	sum() - Sum of array elements along a given axis.
+8.	prod() - Product of array elements along a given axis.
+9.	mean() - Mean of array elements.
+10.	std() - Standard deviation of array elements.
+11.	var() - Variance of array elements.
+12.	min(), max() - Find minimum or maximum value in an array.
+13.	argmin(), argmax() - Index of the minimum or maximum value.
+14.	cumsum() - Cumulative sum of elements.
+15.	cumprod() - Cumulative product of elements.
+________________________________________
+Array Indexing & Slicing
+1.	indexing - Accessing elements or subarrays using indices.
+2.	slicing - Extracting parts of an array (e.g., array[1:4]).
+3.	fancy indexing - Using lists or arrays to index or slice arrays.
+4.	Boolean indexing - Using boolean values or conditions to index arrays.
+________________________________________
+Array Transformation
+1.	flatten() - Return a flattened (1D) copy of an array.
+2.	T - Transpose an array.
+3.	swapaxes() - Swap two axes of an array.
+4.	concatenate() - Join two or more arrays along an existing axis.
+5.	stack() - Stack arrays along a new axis.
+6.	split() - Split an array into multiple sub-arrays.
+7.	vstack() - Stack arrays vertically.
+8.	hstack() - Stack arrays horizontally.
+9.	column_stack() - Stack 1-D arrays as columns into a 2-D array.
+10.	row_stack() - Stack 1-D arrays as rows into a 2-D array.
+________________________________________
+Linear Algebra
+1.	linalg.inv() - Matrix inverse.
+2.	linalg.det() - Determinant of a matrix.
+3.	linalg.eig() - Eigenvalues and eigenvectors.
+4.	linalg.solve() - Solve a linear matrix equation.
+5.	linalg.norm() - Compute the matrix or vector norm.
+6.	linalg.svd() - Singular value decomposition.
+________________________________________
+Random Sampling
+1.	rand() - Generate random numbers from a uniform distribution.
+2.	randn() - Generate random numbers from a standard normal distribution.
+3.	random() - Generate random floats between 0 and 1.
+4.	choice() - Randomly select elements from an array.
+5.	permutation() - Return a random permutation of elements.
+6.	shuffle() - Shuffle the elements of an array in place.
+________________________________________
+Advanced Array Functions
+1.	where() - Return elements chosen from two arrays based on a condition.
+2.	unique() - Find unique elements in an array.
+3.	all(), any() - Test whether all or any elements are True.
+4.	isnan() - Check if elements are NaN (Not a Number).
+5.	isfinite() - Check if elements are finite numbers.
+6.	clip() - Limit the values in an array to a specified range.
+7.	sign() - Return the sign of elements (-1, 0, 1).
+8.	exp(), log() - Element-wise exponential and logarithmic functions.
+9.	sin(), cos(), tan() - Trigonometric functions.
+10.	abs() - Element-wise absolute value.
+________________________________________
+Array Attributes
+1.	shape - The shape of the array.
+2.	size - The total number of elements in the array.
+3.	ndim - The number of dimensions of the array.
+4.	dtype - The data type of elements in the array.
+5.	itemsize - The size (in bytes) of each element in the array.
+6.	nbytes - The total number of bytes consumed by the array.
+________________________________________
+Array I/O
+1.	save() - Save an array to a binary file.
+2.	load() - Load an array from a binary file.
+3.	fromfile() - Read data from a binary file into an array.
+4.	tofile() - Write array data to a binary file.
+5.	savetxt() - Save an array to a text file.
+6.	loadtxt() - Load data from a text file.
+________________________________________
+Miscellaneous
+1.	set_printoptions() - Customize how NumPy arrays are printed.
+2.	allclose() - Check if two arrays are element-wise equal within a tolerance.
+3.	isclose() - Check element-wise if two arrays are equal within a tolerance.
+4.	nan_to_num() - Replace NaN and infinity values in an array.
