@@ -1,0 +1,134 @@
+Core Modules
+1.	scipy.linalg - Linear algebra operations (e.g., matrix decomposition, eigenvalues, etc.).
+2.	scipy.optimize - Optimization and root finding algorithms.
+3.	scipy.integrate - Numerical integration and solving ordinary differential equations (ODEs).
+4.	scipy.interpolate - Interpolation methods for approximating functions and datasets.
+5.	scipy.signal - Signal processing (e.g., filters, convolution, spectral analysis).
+6.	scipy.sparse - Sparse matrix operations for large-scale problems.
+7.	scipy.stats - Statistical functions, distributions, and tests.
+8.	scipy.ndimage - Multi-dimensional image processing.
+9.	scipy.special - Special mathematical functions (e.g., Bessel, Gamma, etc.).
+10.	scipy.fft - Fast Fourier Transform (FFT) and related functions.
+11.	scipy.cluster - Cluster analysis and vector quantization.
+________________________________________
+Optimization and Root Finding
+1.	minimize() - General optimization function (constrained and unconstrained).
+2.	root() - Root-finding for scalar or vector equations.
+3.	brentq(), bisect(), fsolve() - Various root-finding algorithms.
+4.	linprog() - Linear programming solver.
+5.	least_squares() - Non-linear least squares optimization.
+6.	curve_fit() - Curve fitting using least squares.
+7.	differential_evolution() - Global optimization algorithm based on evolution strategy.
+________________________________________
+Numerical Integration
+1.	quad() - Adaptive quadrature integration.
+2.	dblquad(), tplquad() - Double and triple integral solvers.
+3.	odeint() - Solve ordinary differential equations (ODEs).
+4.	solve_ivp() - Interface for solving initial value problems for ODEs.
+5.	trapz() - Trapezoidal rule for numerical integration.
+6.	simps() - Simpson's rule for numerical integration.
+________________________________________
+Signal Processing
+1.	convolve() - Convolution of two arrays.
+2.	correlate() - Cross-correlation of two arrays.
+3.	butter() - Butterworth filter design.
+4.	bessel() - Bessel filter design.
+5.	freqz() - Frequency response of a filter.
+6.	lfilter() - Apply a filter to data.
+7.	hilbert() - Compute the analytic signal using the Hilbert transform.
+8.	spectrogram() - Compute the spectrogram of a signal.
+9.	find_peaks() - Find peaks in data.
+________________________________________
+Interpolation
+1.	interp1d() - 1D linear and cubic interpolation.
+2.	interpolate() - General interpolation function (1D, 2D, etc.).
+3.	griddata() - Interpolation on a grid for scattered data points.
+4.	PchipInterpolator() - Piecewise cubic Hermite interpolator.
+5.	Akima1DInterpolator() - Akima spline interpolator.
+6.	BarycentricInterpolator() - Barycentric interpolation for multi-dimensional data.
+________________________________________
+Sparse Matrices
+1.	csr_matrix() - Compressed Sparse Row matrix format.
+2.	csc_matrix() - Compressed Sparse Column matrix format.
+3.	lil_matrix() - List of Lists sparse matrix format.
+4.	dok_matrix() - Dictionary of Keys sparse matrix format.
+5.	issparse() - Check if an object is a sparse matrix.
+6.	spmatrix() - Base class for sparse matrix types.
+________________________________________
+Linear Algebra
+1.	inv() - Matrix inverse.
+2.	det() - Determinant of a matrix.
+3.	eig() - Eigenvalues and eigenvectors of a matrix.
+4.	svd() - Singular Value Decomposition (SVD).
+5.	solve() - Solve linear equations Ax=bAx = b.
+6.	qr() - QR decomposition.
+7.	norm() - Compute various norms (e.g., Frobenius, Euclidean).
+8.	cholesky() - Cholesky decomposition for positive-definite matrices.
+9.	lu() - LU decomposition (Lower-Upper decomposition).
+________________________________________
+Statistical Functions and Distributions
+1.	mean() - Compute the mean (average) of data.
+2.	median() - Compute the median of data.
+3.	std() - Compute the standard deviation.
+4.	var() - Compute the variance.
+5.	mode() - Find the most frequent value (mode).
+6.	skew() - Compute the skewness of data.
+7.	kurtosis() - Compute the kurtosis of data.
+8.	probplot() - Generate a probability plot.
+9.	ttest_1samp() - One-sample t-test.
+10.	ttest_ind() - Two-sample t-test.
+11.	chisquare() - Chi-squared test for independence.
+12.	norm() - Normal distribution.
+13.	binom() - Binomial distribution.
+14.	poisson() - Poisson distribution.
+15.	gamma() - Gamma distribution.
+________________________________________
+Multi-dimensional Image Processing
+1.	gaussian_filter() - Apply a Gaussian filter to an image.
+2.	sobel() - Compute the Sobel edge detection filter.
+3.	rotate() - Rotate an image by a specified angle.
+4.	shift() - Apply an image shift.
+5.	zoom() - Rescale an image.
+6.	label() - Label connected components in an image.
+7.	morphology() - Apply morphological operations (erosion, dilation, etc.).
+________________________________________
+Special Functions
+1.	gamma() - Gamma function.
+2.	bessel() - Bessel functions of the first and second kind.
+3.	ellipe() - Elliptic integral of the second kind.
+4.	legendre() - Legendre polynomials.
+5.	hermite() - Hermite polynomials.
+6.	hypergeom() - Generalized hypergeometric functions.
+7.	airy() - Airy functions.
+8.	erf() - Error function (and complementary error function erfc()).
+________________________________________
+Fast Fourier Transform (FFT)
+1.	fft() - Compute the 1D fast Fourier transform.
+2.	ifft() - Compute the 1D inverse FFT.
+3.	fft2() - Compute the 2D fast Fourier transform.
+4.	ifft2() - Compute the 2D inverse FFT.
+5.	fftn() - Compute the N-dimensional FFT.
+6.	ifftn() - Compute the N-dimensional inverse FFT.
+7.	fftshift() - Shift the zero-frequency component to the center of the spectrum.
+8.	ifftshift() - Inverse of fftshift().
+________________________________________
+Clustering
+1.	kmeans() - K-means clustering algorithm.
+2.	hierarchy.linkage() - Hierarchical clustering.
+3.	hierarchy.dendrogram() - Dendrogram plot for hierarchical clustering.
+4.	vq() - Vector quantization and clustering.
+5.	kmeans2() - Alternative K-means clustering (with 2 outputs).
+________________________________________
+Miscellaneous
+1.	setdiff1d() - Find elements in one array but not in another.
+2.	unique() - Find unique elements in an array.
+3.	repeat() - Repeat elements of an array.
+4.	unique() - Find unique values in an array.
+5.	sign() - Return the sign of elements.
+6.	clip() - Clip values to within a range.
+7.	count_nonzero() - Count non-zero elements in an array.
+8.	issubdtype() - Check if the dtype is a sub-type of another.
+9.	concatenate() - Join multiple arrays along a specified axis.
+10.	sort() - Sort an array along a given axis.
+11.	searchsorted() - Find indices where elements should be inserted to maintain order.
+________________________________________
